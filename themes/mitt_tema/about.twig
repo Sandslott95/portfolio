@@ -1,0 +1,17 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        {% if meta.icon %}
+            <i class="{{ meta.icon }}" aria-hidden="true"></i>
+        {% endif %}
+        <h1>{{ meta.title }}</h1>
+        {{ content }}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-header i {
+  font-size: 1.5rem;
+  color: #3d5a80; /* Exempel på färg */
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  i {
+    font-size: 2rem;
+    color: #3d5a80;
+  }
+}
