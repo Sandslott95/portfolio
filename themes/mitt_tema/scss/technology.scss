@@ -1,0 +1,60 @@
+.landing-page {
+  display: grid;
+  gap: 1.96rem;
+  margin-bottom: $margin;
+}
+
+.landing-page h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: $margin;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technology {
+  display: grid;
+  grid-template-columns: 30% 70%; /* Sidebar och content */
+  gap: 1.5rem;
+  background-color: rgb(252, 252, 252); /* Vit bakgrund */
+  padding: 2rem; /* Lägger till utrymme runt */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en skugga */
+  border-radius: 8px; /* Rundar hörnen */
+  margin: 2rem 0; /* Lägger till mellanrum ovanför och under */
+  max-width: 100%; /* Säkerställer att den inte överstiger sin förälder */
+  box-sizing: border-box; /* Gör att padding inkluderas i totalbredden */
+}
+
+.technology .article {
+  background-color: rgb(252, 252, 252);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Inkluderar padding i bredd */
+}
+
+.technology .menu {
+  background-color: rgb(252, 252, 252);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Inkluderar padding i bredd */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .technology {
+    grid-template-columns: 1fr; /* Endast en kolumn på små skärmar */
+    padding: 1rem; /* Mindre padding */
+  }
+
+  .menu {
+    display: none; /* Dölj sidebar */
+  }
+}

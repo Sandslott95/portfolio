@@ -4,15 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: $padding;
-  background-color: $header-bg-color;
+  background-color: #8b0000; /* Mörkröd bakgrund */
 
   .site-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: #deba08;
-
+    color: #ffd700; /* Guldtext för att sticka ut */
   }
 
   .logo img {
@@ -23,7 +22,13 @@
 
 .nav a {
   font-size: $nav-font-size;
-  color: $yellow-color;
+  color: #fff; /* Vit text för hög kontrast */
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ffd700; /* Guldtext vid hover */
+  }
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,64 @@
+/* Grundlayout för grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre kolumner */
+  gap: 1rem; /* Mellanrum mellan rutorna */
+  padding: 1rem; /* Utrymme runt grid */
+}
+
+/* Titel som täcker hela raden */
+.grid-title {
+  grid-column: span 3; /* Täcker alla tre kolumner i stor vy */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333; /* Mörkare textfärg */
+  background-color: #f9f9f9; /* Ljus bakgrund */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mjuk skugga */
+}
+
+/* Standard för grid-element */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #ddd; /* Ljusare kant */
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Ljus bakgrund */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mjuk skugga */
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smidig animation */
+  color: #333; /* Mörkare textfärg */
+}
+
+/* Hover-effekt för grid-element */
+.grid-item:hover {
+  transform: translateY(-5px); /* Lyft vid hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Starkare skugga */
+  background-color: #eef; /* Ljus blå ton vid hover */
+}
+
+
+/* Responsiv layout för små skärmar */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr !important; /* En kolumn */
+  }
+
+  .grid-title {
+    grid-column: span 1 !important; /* Täcker bara en kolumn */
+    font-size: 1.8rem; /* Minska storlek på små skärmar */
+    padding: 0.8rem;
+  }
+
+  .grid-item {
+    grid-column: span 1 !important; /* Varje box tar upp en hel rad */
+    font-size: 1.3rem; /* Minska textstorlek */
+    padding: 1.5rem;
+  }
+}
