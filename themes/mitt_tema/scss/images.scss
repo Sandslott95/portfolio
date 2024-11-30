@@ -4,3 +4,19 @@
   display: block;
   margin: 0 auto;
 }
+
+.analysis-image {
+  display: block; /* Gör bilden till ett blockelement */
+  margin: 0 auto 1rem; /* Centrerar bilden och lägger till lite marginal under */
+  max-width: 100%; /* Säkerställ att bilden är responsiv */
+  height: auto;
+}
+
+.color-palette {
+  margin-top: 1rem; /* Lägg till avstånd ovanför färgpaletten */
+  text-align: left; /* Säkerställ att texten inte centreras */
+}
+
+img {
+  filter: brightness($brightness) contrast($contrast) grayscale($greyscale);
+}

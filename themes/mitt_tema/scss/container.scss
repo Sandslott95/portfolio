@@ -7,7 +7,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  color: $text-color; 
+  color: $container-text-color; 
 
 }
 
@@ -26,9 +26,24 @@ body {
   max-width: 64rem;
   padding: $padding;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: $container-color;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  a:any-link {
+    color: $link-color; /* Din önskade färg */
+    text-decoration: none; /* Ingen understrykning */
+  }
+  
+  a:any-link:hover {
+    color: $link-hover-color; /* Färg vid hover */
+    text-decoration: underline; /* Lägg till understrykning vid hover */
+  }
+
+  a:any-link:visited {
+    color: $link-visited-color; /* Färg för besökta länkar */
+    text-decoration: none; /* Ingen understrykning för besökta länkar */
+  }
 }
 
 @media (max-width: 768px) {

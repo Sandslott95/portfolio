@@ -4,25 +4,30 @@
   justify-content: space-between;
   align-items: center;
   padding: $padding;
-  background-color: #8b0000; /* Mörkröd bakgrund */
+  background-color: $background-color; /* Mörkröd bakgrund */
 
   .site-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: #ffd700; /* Guldtext för att sticka ut */
   }
 
   .logo img {
     max-width: 100%; /* Gör logotypen responsiv */
     height: auto;
   }
+
+  h1,
+  p {
+    color: $header-text-color; /* Ändra till den färg du vill ha */
+    text-decoration: underline;
+  }
 }
 
 .nav a {
   font-size: $nav-font-size;
-  color: #fff; /* Vit text för hög kontrast */
+  color: $header-text-color; /* Vit text för hög kontrast */
   text-decoration: none;
   transition: color 0.3s ease;
 

@@ -4,14 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: $padding;
-  background-color: rgb(75, 1, 1);
-  color: $yellow-color;
+  background-color: $background-color;
+  color: $footer-text-color;
 
   .social a {
     
     text-decoration: none;
     font-size: 3rem;
-    color: rgb(255, 255, 255);
+    color: $button-text;
     
   }
 }
