@@ -1,0 +1,111 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="{{ base_url }}/image/grishus.jpg" target="_blank">
+                <img 
+                    src="{{ base_url }}/image/grishus.jpg?w=300&h=300&crop-to-fit&type=webp&q=70" 
+                    alt="Grishus" 
+                    loading="lazy"
+                    srcset="
+                        {{ base_url }}/image/grishus.jpg?w=300&h=300&crop-to-fit&type=webp&q=70 300w,
+                        {{ base_url }}/image/grishus.jpg?w=600&h=600&crop-to-fit&type=webp&q=70 600w"
+                    sizes="
+                        (max-width: 768px) 100vw,
+                        (min-width: 769px) and (max-width: 1200px) 33vw,
+                        25vw">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="{{ base_url }}/image/snowFox.jpg" target="_blank">
+                <img 
+                    src="{{ base_url }}/image/snowFox.jpg?w=300&h=300&crop-to-fit&type=webp&q=70" 
+                    alt="Snow Fox" 
+                    loading="lazy"
+                    srcset="
+                        {{ base_url }}/image/snowFox.jpg?w=300&h=300&crop-to-fit&type=webp&q=70 300w,
+                        {{ base_url }}/image/snowFox.jpg?w=600&h=600&crop-to-fit&type=webp&q=70 600w"
+                    sizes="
+                        (max-width: 768px) 100vw,
+                        (min-width: 769px) and (max-width: 1200px) 33vw,
+                        25vw">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="{{ base_url }}/image/snowmen.jpg" target="_blank">
+                <img 
+                    src="{{ base_url }}/image/snowmen.jpg?w=300&h=300&crop-to-fit&type=webp&q=70" 
+                    alt="Snögubbe" 
+                    loading="lazy"
+                    srcset="
+                        {{ base_url }}/image/snowmen.jpg?w=300&h=300&crop-to-fit&type=webp&q=70 300w,
+                        {{ base_url }}/image/snowmen.jpg?w=600&h=600&crop-to-fit&type=webp&q=70 600w"
+                    sizes="
+                        (max-width: 768px) 100vw,
+                        (min-width: 769px) and (max-width: 1200px) 33vw,
+                        25vw">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="{{ base_url }}/image/tomtegrott.jpg" target="_blank">
+                <img 
+                    src="{{ base_url }}/image/tomtegrott.jpg?w=300&h=300&crop-to-fit&type=webp&q=70" 
+                    alt="Tomte med grött" 
+                    loading="lazy"
+                    srcset="
+                        {{ base_url }}/image/tomtegrott.jpg?w=300&h=300&crop-to-fit&type=webp&q=70 300w,
+                        {{ base_url }}/image/tomtegrott.jpg?w=600&h=600&crop-to-fit&type=webp&q=70 600w"
+                    sizes="
+                        (max-width: 768px) 100vw,
+                        (min-width: 769px) and (max-width: 1200px) 33vw,
+                        25vw">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="{{ base_url }}/image/tomtePepparkaka.jpg" target="_blank">
+                <img 
+                    src="{{ base_url }}/image/tomtePepparkaka.jpg?w=300&h=300&crop-to-fit&type=webp&q=70" 
+                    alt="Tomte med pepparkaka" 
+                    loading="lazy"
+                    srcset="
+                        {{ base_url }}/image/tomtePepparkaka.jpg?w=300&h=300&crop-to-fit&type=webp&q=70 300w,
+                        {{ base_url }}/image/tomtePepparkaka.jpg?w=600&h=600&crop-to-fit&type=webp&q=70 600w"
+                    sizes="
+                        (max-width: 768px) 100vw,
+                        (min-width: 769px) and (max-width: 1200px) 33vw,
+                        25vw">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="{{ base_url }}/image/tomteSkinka.jpg" target="_blank">
+                <img 
+                    src="{{ base_url }}/image/tomteSkinka.jpg?w=300&h=300&crop-to-fit&type=webp&q=70" 
+                    alt="Tomte med skinka" 
+                    loading="lazy"
+                    srcset="
+                        {{ base_url }}/image/tomteSkinka.jpg?w=300&h=300&crop-to-fit&type=webp&q=70 300w,
+                        {{ base_url }}/image/tomteSkinka.jpg?w=600&h=600&crop-to-fit&type=webp&q=70 600w"
+                    sizes="
+                        (max-width: 768px) 100vw,
+                        (min-width: 769px) and (max-width: 1200px) 33vw,
+                        25vw">
+            </a>
+        </div>
+    </div>
+    <div class="video-container">
+    <iframe 
+        src="https://www.youtube.com/embed/6y96PeJuVMM?si=jgxDQrS4qiHXTeFl" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+    {% include 'incl/footer.twig' %}
+</body>

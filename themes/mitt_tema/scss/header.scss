@@ -11,25 +11,31 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
+    flex-wrap: nowrap; /* Förhindra radbrytningar */
 
-  .logo img {
-    max-width: 100%; /* Gör logotypen responsiv */
-    height: auto;
   }
 
   h1,
   p {
+    font-size: 2rem;
     color: $header-text-color; /* Ändra till den färg du vill ha */
     text-decoration: underline;
   }
 }
+
+.logo img {
+  max-width: 150px; /* Minska storleken på logotypen för att frigöra utrymme */
+  height: auto;
+}
+
+
 
 .nav a {
   font-size: $nav-font-size;
   color: $header-text-color; /* Vit text för hög kontrast */
   text-decoration: none;
   transition: color 0.3s ease;
+  flex-wrap: nowrap; /* Förhindra radbrytningar */
 
   &:hover {
     color: #ffd700; /* Guldtext vid hover */
