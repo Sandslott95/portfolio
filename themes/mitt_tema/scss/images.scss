@@ -1,8 +1,23 @@
+.logo img {
+  max-width: 150px; /* Begränsar logotypens bredd för att hålla den proportionerlig */
+  height: auto; /* Bibehåller korrekt bildförhållande */
+  display: block; /* Gör logotypen till ett blockelement */
+  margin: 0 auto; /* Centrerar logotypen horisontellt */
+  border: 3px solid $nav-frame; /* Lägger till en tydlig ram i blått */
+  border-radius: 10px; /* Rundar hörnen för en mjukare design */
+  padding: 5px; /* Skapar utrymme mellan logotypen och ramen */
+  background-color: #f9f9f9; /* En ljus bakgrund för kontrast mot ramen */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtil skugga för djup */
+}
+
 .min-bild {
   max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
+  border: 3px solid $bild-frame; /* Ramens färg och tjocklek */
+  border-radius: 5px; /* Rundade hörn (valfritt) */
+  padding: 5px; /* Utrymme mellan bilden och ramen (valfritt) */
 }
 
 .analysis-image {
@@ -10,6 +25,9 @@
   margin: 0 auto 1rem; /* Centrerar bilden och lägger till lite marginal under */
   max-width: 100%; /* Säkerställ att bilden är responsiv */
   height: auto;
+  border: 2px solid $bild-frame; /* Lägg till en ram runt analysbilder */
+  border-radius: 10px; /* Rundade hörn för bättre visuell effekt */
+  padding: 5px;
 }
 
 .color-palette {

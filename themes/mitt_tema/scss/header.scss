@@ -23,13 +23,6 @@
   }
 }
 
-.logo img {
-  max-width: 150px; /* Minska storleken på logotypen för att frigöra utrymme */
-  height: auto;
-}
-
-
-
 .nav a {
   font-size: $nav-font-size;
   color: $header-text-color; /* Vit text för hög kontrast */
@@ -41,6 +34,34 @@
     color: #ffd700; /* Guldtext vid hover */
   }
 }
+
+.nav-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; /* Minsta bredd */
+  height: 48px; /* Minsta höjd */
+  margin: 16px; /* Avstånd från andra element */
+  background-color: transparent;
+  cursor: pointer;
+
+  i {
+    font-size: 1.5rem; /* Ikonstorlek */
+  }
+}
+
+.nav a {
+  display: inline-block;
+  padding: 16px 20px; /* Tillräcklig pekyta */
+  margin: 12px; /* Avstånd mellan länkar */
+  min-width: 48px; /* Minsta bredd */
+  min-height: 48px; /* Minsta höjd */
+  text-decoration: none;
+  color: $header-text-color;
+  text-align: center;
+}
+
+
 
 @media (max-width: 768px) {
   .header {
@@ -65,11 +86,13 @@
       display: flex;
       flex-direction: column; /* Vertikal layout för navigering */
       align-items: center;
-      gap: 1rem;
+      gap: 1.5rem;
     }
   }
 
   .nav-toggle {
+    width: 56px; /* Gör knappen större på mobila enheter */
+    height: 56px;
     display: block; /* Visa hamburger-ikonen på små skärmar */
     font-size: 1.5rem;
   }

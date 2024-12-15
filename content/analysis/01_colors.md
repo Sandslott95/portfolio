@@ -4,11 +4,12 @@ Description: I den här rapporten analyseras tre webbplatser i hur de använder 
 Template: analysis
 ---
 
-=======================
+<hr>
 
 En analys av hur färger och typografi används på tre webbplatser för att skapa en viss känsla eller signalera ett budskap.
 
 ## 1. Urval
+<hr>
 För att genomföra analysen valde jag att fokusera på tre webbplatser inom samma kategori: ishockey. Jag gjorde detta val för att jämföra hur olika klubbar inom samma område/liga använder sig av färger och typografi för att vissa sin identitet.
 1. Webbplats A - [https://www.kalmarhockey.com/]
 2. Webbplats B - [https://www.difhockey.se/]
@@ -18,6 +19,7 @@ C är ju för hela liggan som alla klubbar spelare i så denna sidan ska ju vara
 
 
 ## 2. Metod
+<hr>
 För att analysera färger och typografi använde jag:
 - Verktyg: Främst använt mig av devtools för att inspektera element på sidorn och där igenom ta fram deras färgpalett och typografi. Genom att gå in on kolla element så får man tillgång till nörvänding information som stilar, inklusive color, background-color, font-family, och andra egenskaper.
 - Geonom jag använder DevTools för denna info så blir det enklare att:
@@ -26,7 +28,10 @@ Färgschema: Identifiera vilka färger som används och kategorisera dem enligt 
 Typografi: Dokumentera rubrik- och texttypsnitt för H1-H3 och brödtext.
 
 ## 3. Resultat
+<hr>
+
 ### 3.1 Webbplats A - Kalmar Hockey
+<hr>
 Här är en snapshot av webbplatsen Kalmar Hockey:
 
 <img src="../assets/img/kalmarHC.png" alt="Kalmar Hockey" class="analysis-image">
@@ -57,6 +62,7 @@ Webbplatsen är inställd så att om det primära typsnittet inte kan laddas kor
 3.5 Kalmar HC:s färgval och typografi speglar klubbens profil väl, där de röda nyanserna som spelgar deras logo, match tröjor, m.m, medan de moderna typsnitten, Roboto med  vitt, gör det tydligt och en känsla som passar en hockeyklubb.
 
 ### 3.1 Webbplats B - Djurgården Hockey
+<hr>
 Snapshot från Djurgården Hockeys webbplats:
 <img src="../assets/img/djurgårdenIF.png" alt="Kalmar Hockey" class="analysis-image">
 
@@ -86,6 +92,7 @@ Djurgården-sidan använder Arial och Helvetica som standardteckensnitt, definie
 3.5 Djurgården Hockeys färgval och typografi förmedlar en traditionell och funktionell profil, med ljusare blå nyanser som kompletteras av vitt för kontrast och tydlighet. Det enkla valet av Arial och Helvetica som ger sidan en praktisk och lättläst utformning.
 
 ### 3.1 Webbplats C - HockeyAllsvenskan
+<hr>
 Snapshot från HockeyAllsvenskans webbplats:
 <img src="../assets/img/hockyallsvenskan.png" alt="Kalmar Hockey" class="analysis-image">
 
@@ -116,9 +123,11 @@ Snapshot från HockeyAllsvenskans webbplats:
 3.5 HockeyAllsvenskans ska ju vara en allmän sida för hela hockyligan, så dess färgval och typografi ska vara professionellt, modern profil och neutral, de blå nyanserna passar för hockey och signalerar stabilitet, medans de konsekvent använder det stilrena typsnittet Barlow för tydlighet, men kunde valt annat färgschema för att inte likna andra lag i ligans sidor. 
 
 ## 4 Analys
-
+<hr>
 Kalmar HC: monokromatiska färgschema med röda nyanser speglar klubbens varumärke väl och blir ändå läsbar genom kombination med vitt för god kontrast och passande. HockeyAllsvenskan: Som en allmän plattform för hela ligan bör HockeyAllsvenskan vara mer neutral, dess blå färgschema och yypografi med Barlow bidrar till en stilren och modern känsla, men färgschemat riskerar att likna vissa lag i ligan, vilket kan minska webbplatsens unika identitet. Djurgården Hockey: Webbplatsen för Djurgården Hockey använder ljusare blå nyanser, vilket skiljer något HockeyAllsvenskans mörkare palett och är tydligt genom att kompletteras med vitt, men hade kunnats göra mer unikt genom att unytja lagets alla färger med rött och gult ytterligare för att sticka ut. En viktig observation från denna studie är hur valet av färger och typsnitt påverkar intrycket av en webbplats och dess förmåga att kommunicera sin profil/ståndpunkt. fått tyligt ide hur olika färgshcmean funkar speciellt monokromatiska färgscheman och hur de är effektiva för att skapa en sammanhängande design.Typografi spelar också en avgörande roll i att förstärka varumärket och i detta fall hade man aknske kunnat slapa ännumer invidulaitet genom att använda mer unika eller skiljande typsnitt.Genom att jämföra dessa tre webbplatser framgår det att färg och typografi inte bara är estetiska val, utan också strategiska verktyg för att kommunicera identitet, skapa en viss känsla, och engagera användare.
-#### 5: Övrigt
+
+## 5: Övrigt
+<hr>
 Av Oscar Sandberg, Ossn17
 
 

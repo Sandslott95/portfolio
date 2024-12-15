@@ -14,6 +14,75 @@
     color: $button-text;
     
   }
+
+}
+
+.footer-puck-right {
+  flex: 0.02;
+  width: 120px; /* Bredd för oval puck */
+  height: 20px; /* Höjd för oval puck */
+  background: #fff; /* Vit färg för pucken */
+  border-radius: 50%; /* Oval form */
+  position: relative; /* Behövs för att positionera trail */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtil skugga för pucken */
+
+  /* Trail */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Centrera trail vertikalt */
+    left: 10px; /* Trailens startpunkt */
+    width: 140px; /* Trailens längd */
+    height: 20px; /* Trailens bredd */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); /* Trailens färg och fade */
+    border-radius: 10px; /* Rundade hörn för trail */
+    transform: translateY(-50%); /* Justera trailens position */
+  }
+}
+
+.footer-puck-left {
+  flex: 0.02;
+  width: 120px; /* Bredd för oval puck */
+  height: 20px; /* Höjd för oval puck */
+  background: #fff; /* Vit färg för pucken */
+  border-radius: 50%; /* Oval form */
+  position: relative; /* Behövs för att positionera trail */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtil skugga för pucken */
+
+  /* Trail */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Centrera trail vertikalt */
+    right: 10px; /* Trailens startpunkt */
+    width: 140px; /* Trailens längd */
+    height: 20px; /* Trailens bredd */
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); /* Trailens färg och fade */
+    border-radius: 10px; /* Rundade hörn för trail */
+    transform: translateY(-50%); /* Justera trailens position */
+  }
+}
+
+/* Keyframes för puckens rörelse */
+@keyframes hockey-puck-shoot {
+  0% {
+    transform: translateX(100%); /* Start från höger */
+  }
+
+  100% {
+    transform: translateX(-100%); /* Slutar till vänster */
+  }
+}
+
+/* Keyframes för trailens fade-out */
+@keyframes hockey-trail-fade {
+  0% {
+    opacity: 1; /* Full synlighet i början */
+  }
+
+  100% {
+    opacity: 0; /* Trail försvinner helt */
+  }
 }
 
 @media (max-width: 768px) {
@@ -30,5 +99,9 @@
     a {
       font-size: 2.5rem; /* Minska storlek på ikoner */
     }
+  }
+
+  .footer-puck-left {
+    display: none; /* Dölj vänster puck */
   }
 }

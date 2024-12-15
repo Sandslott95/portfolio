@@ -6,8 +6,16 @@ body {
 
 body {
   display: flex;
+  font-size: 1.5rem;
   flex-direction: column;
   color: $container-text-color; 
+
+}
+
+hr {
+  border-top: 4px solid $line-color; /* Tjocklek och färg på linjen */
+  margin: 20px 0; /* Avstånd ovanför och under linjen */
+  width: 100%; /* Bredd på linjen (valfritt) */
 
 }
 
@@ -15,6 +23,12 @@ body {
   flex: 1 0 auto;
 
 }
+
+code {
+  background-color: #f4f4f4; /* Ljusa grå bakgrund */
+  color: $line-color; /* Mörkgrå text */
+}
+
 
 .header,
 .footer {
@@ -46,6 +60,26 @@ body {
   }
 }
 
+a {
+  color: #007bff; /* Primär länkfärg */
+  text-decoration: underline; /* Understrykning */
+  font-weight: 600; /* Gör länkar fetstilta */
+  transition: all 0.3s ease; /* Mjuk övergång för hover-effekter */
+}
+
+a:hover {
+  color: #0056b3; /* Mörkare blå vid hover */
+  text-decoration: none; /* Ta bort understrykning vid hover */
+  background-color: rgba(0, 123, 255, 0.1); /* Subtil bakgrundseffekt */
+}
+
+li a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
 @media (max-width: 768px) {
   .main {
     padding: 1rem;
@@ -57,6 +91,13 @@ body {
     align-items: center;
     text-align: center;
   }
+
+  td {
+    background-color: #fff;
+    color: #777; /* Kan skapa problem */
+  }
+
+
 }
 
 .hidden {

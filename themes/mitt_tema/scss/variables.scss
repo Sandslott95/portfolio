@@ -6,7 +6,10 @@ $header-text-color: #fff;
 //Footer
 $footer-text-color: #fff;
 
-$nav-font-size: 1.5rem;
+//lines (hr)
+$line-color: #333;
+
+$nav-font-size: 2rem;
 $yellow-color: #deba08;
 $padding: 2rem;
 $background-color: rgb(147, 3, 3);
@@ -14,8 +17,8 @@ $container-color: #fff;
 $container-text-color: #333;
 $boarder-color: #ccc;
 
-$link-color: #0056b3; // Standard länkfärg (blå)
-$link-hover-color: #003a80; // Mörkare blå för hover-effekt
+$link-color: #007bff; // Standard länkfärg (blå)
+$link-hover-color: #002b66; // Mörkare blå för hover-effekt
 $link-visited-color: #4b0082;
 $margin: 1.96rem;
 
@@ -26,3 +29,7 @@ $button-text: #fff;
 $greyscale: 0%;
 $contrast: 100%;
 $brightness: 100%;
+
+//Frame color
+$nav-frame: #f00;
+$bild-frame: #333;

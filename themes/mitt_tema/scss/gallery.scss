@@ -15,17 +15,21 @@ video {
 }
 
 .gallery-item {
-  overflow: hidden; /* Förhindrar att bilden sticker ut */
-  border-radius: 8px; /* Rundade hörn (valfritt) */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägger till en skugga */
+  overflow: hidden; /* Förhindra att innehåll sticker ut */
+  border: 3px solid #333; /* Tydlig blå ram */
+  border-radius: 8px; /* Rundade hörn */
+  padding: 5px; /* Extra utrymme mellan bild och ram */
+  background-color: #f9f9f9; /* Ljus bakgrund för kontrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtil skugga */
 }
 
 .gallery-item img {
   display: block;
-  width: 100%; /* Bilden fyller sin container */
-  height: auto; /* Bibehåller bildens proportioner */
-  object-fit: cover; /* Säkerställer att bilden fyller utrymmet snyggt */
+  width: 100%; /* Gör att bilden fyller hela containern */
+  height: auto; /* Behåller bildens proportioner */
+  border-radius: 5px; /* Rundade hörn på bilden */
 }
+
 
 .video-container {
   position: relative;
@@ -35,6 +39,8 @@ video {
   margin: 2rem auto; /* Lägg till marginal upptill och centrera */
   max-width: 800px; /* Begränsa bredden */
   width: 100%; /* Gör videon responsiv */
+
+  border: 3px solid #fff; /* Ramens tjocklek och färg */
 
   iframe {
     position: absolute;

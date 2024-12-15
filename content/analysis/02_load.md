@@ -4,12 +4,12 @@ Description: En analys av laddningstid och användbarhet för tre utvalda webbpl
 Template: analysis
 ---
 
-=======================
+<hr>
 
 I denna analys utvärderas laddningstide och förbättringsmöjligheter för tre webbplatser med hjälp av mätverktyg som Google PageSpeed och DevTool och allt resultat är sammanställt i en rapport med visualiseringar från ett kalkylark.
 
 ## 1. Urval
-
+<hr>
 För analysen valde jag tre webbplatser med olika målgrupper och syften för att få en bred jämförelse av laddningstid och användbarhet.
 
 Kalmar HC - https://www.kalmarhockey.com/: En sportklubbs webbplats som representerar en lokal hockeyklubb och mitt favorit lag. Webbplatsen riktar sig till supportrar och lokala invånare med fokus på information, nyheter och matcher.
@@ -23,7 +23,10 @@ En svensk webbplats som riktar sig till aktiesparare och investerare med nyheter
 Med dessa tre sidorså får man olika typer av webbplatser, för olika målgrupper och innehållsstrukturer, hanterar laddningstid och optimering på olika sätt. Kalmar HC är en mindre lokal sida, D&D Beyond en större internationell plattform, och Aktiespararna en nationell webbplats med fokus på affärsinformation.
 
 ## 2. Verktyg och metod
-#### Verktyg:
+<hr>
+
+### Verktyg:
+
 Använd följande verktyg för denna analys:
 
 Google Pagespeed Insights: För att mäta betyg på Mobile och Desktop.
@@ -39,8 +42,10 @@ Använd Shift + Ctrl + R i DevTools för att rensa cachen och mäta laddningstid
 Detta upprepas tre gånger för varje sida och sedan tas snittet som läggs in i excel ark för enkel visualisering.
 
 ## Resultat
+<hr>
 <div class="spreadsheet-container">
     <iframe 
+        title="sites performance"
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTxDyH7DFd4cKGoM_YZ7-Sao5rZ-J8itBWQM46JWRquAbHW3wXQzovP4PhTWbjRR5PkLx5B2Rmr3Cs/pubhtml?widget=true&amp;headers=false" 
         width="100%" 
         height="300" 
@@ -49,6 +54,7 @@ Detta upprepas tre gånger för varje sida och sedan tas snittet som läggs in i
 </div>
 
 ### Webbplats A - Kalmar HC
+<hr>
 <img src="../assets/img/load2_hc.png" alt="Kalmar Hockey" class="analysis-image">
 #### Sida 1 - spelshcema: https://www.kalmarhockey.com/game-schedule
 #### Sida 2 - nyheter: https://www.kalmarhockey.com/article/archive
@@ -57,6 +63,7 @@ Detta upprepas tre gånger för varje sida och sedan tas snittet som läggs in i
 Webbplatsen kan förbättras genom att optimera bildstorlekar och använda moderna format som WebP för att minska sidstorlek och laddningstider. Dessutom kan tunga JavaScript-filer och externa resurser anpassas eller tars bort för att skapa en bättre prestanda för denna websidda när det kommer till både mobil och desktop.
 
 ### Webbplats B - D&D beyond
+<hr>
 <img src="../assets/img/D&D.png" alt="Kalmar Hockey" class="analysis-image">
 #### Sida 1 - https://www.dndbeyond.com/how-to-play-dnd?srsltid=AfmBOorbnijM-_Dg-QviCL5tMdT95xnQ1fmkyByMwSMgGMcOniy4_zrs
 #### Sida 2 - https://www.dndbeyond.com/sources#Sourcebooks
@@ -65,6 +72,7 @@ Webbplatsen kan förbättras genom att optimera bildstorlekar och använda moder
 Webbplatsen kan förbättra sina laddningstider genom att konvertera bilder till WebP-format för att minska filstorleken, och använda lazy loading för bilder som inte är synliga direkt, eftersom att vissa av dens sidor har väldigt mycket bilder.
 
 ### Webbplats C - Aktiespararna
+<hr>
 <img src="../assets/img/aktie.png" alt="Kalmar Hockey" class="analysis-image">
 #### Sida 1 -https://www.aktiespararna.se/nyheter
 #### Sida 2 - https://www.aktiespararna.se/om-oss
@@ -73,6 +81,7 @@ Webbplatsen kan förbättra sina laddningstider genom att konvertera bilder till
 Aktiespararna skulle nog kunna optimeras ytterligare genom reducera antalet bilder och storleken på JavaScript-filer, även med lazy loading för att minska laddningstider.
 
 ### Analys
+<hr>
 De vanligaste förbättringsåtgärderna som kunde identifierades är bildoptimering speciellt på sidor med mycket bilder, men även minimering av JavaScript och CSS, samt implementering av lazy loading hade hjälp i sådana situationer. Att implemenmtera dessa åtgärder kan webbplatser minska sina laddningstider, förbättra användarupplevelsen och se till att de får en snabbare och smidigare upplevelse för sina besökare.
 
 Rangordning och Vinnare
@@ -89,10 +98,12 @@ Motivering: Kalmar HC presterar sämst i analysen. Med höga laddningstider (0,9
 
 Aktiespararna sticker ut som den bäst presterande webbplatsen genom effektiv hantering av resurser och inte överfyllda sidor heller. D&D Beyond presterar som näst bäst, men dras ner av mängder med tunga resurser och långsamma laddningstider på vissa sidor. Kalmar HC är den sämsta sida och skulle behöva förbättras genom möjligen att minska antalet resurser och bättre metoder. Generellt visar analysen att optimering av bilder, minimering av script och implementation av lazy loading är avgörande för att förbättra prestandan på alla tre webbplatser.
 #### Gräns tid
+<hr>
 Snabb webbplats:
 En webbplats med en laddningstid under 1 sekund uppfattas som snabb. Detta gör att användaren får innehållet presenterat omedelbart utan att behöva vänta.
 
 Mitt urval av webbplatser visar att Aktiespararna klarar gränsvärdet för snabb laddningstid med god marginal och upplevs som mycket snabb, medan D&D Beyond ligger däeremot ofta över gränsen på 1 sekund och kan därför upplevas som långsam/seg på vissa sidor, och Kalmar HC ligger närmare gränsen och även under den på vissa sidor, men med tanke på dess storlek och några uppdatering kunna hman under gränsen oavsätt.
 
 ## övrigt
+<hr>
 Av Oscar Sandberg, ossn17

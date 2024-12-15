@@ -5,12 +5,12 @@ Description: Documentation that came with Pico.
 ---
 
 ## Welcome to Pico
-
+<hr>
 Congratulations, you have successfully installed [Pico][] %version%.
 %meta.description% <!-- replaced by the above Description header -->
 
 ## Creating Content
-
+<hr>
 Pico is a flat file CMS. This means there is no administration backend or
 database to deal with. You simply create `.md` files in the `content` folder
 and those files become your pages. For example, this file is called `index.md`
@@ -76,7 +76,7 @@ using the <code>&#37;assets_url&#37;</code> placeholder, for example:
 <code>!\[Image Title\](&#37;assets_url&#37;/image.png)</code>
 
 ### Text File Markup
-
+<hr>
 Text files are marked up using [Markdown][] and [Markdown Extra][MarkdownExtra].
 They can also contain regular HTML.
 
@@ -125,7 +125,7 @@ There are also certain variables that you can use in your text files:
   e.g. <code>&#37;config.theme&#37;</code> is replaced with `default`
 
 ### Blogging
-
+<hr>
 Pico is not blogging software - but makes it very easy for you to use it as a
 blog. You can find many plugins out there implementing typical blogging
 features like authentication, tagging, pagination and social plugins. See the
@@ -155,7 +155,7 @@ something like the following:
    ```
 
 ## Customization
-
+<hr>
 Pico is highly customizable in two different ways: On the one hand you can
 change Pico's appearance by using themes, on the other hand you can add new
 functionality by using plugins. Doing the former includes changing Pico's HTML,
@@ -167,7 +167,7 @@ developed and released to the public. Please refer to the next sections for
 details.
 
 ### Themes
-
+<hr>
 You can create themes for your Pico installation in the `themes` folder. Pico
 uses [Twig][] for template rendering. You can select your theme by setting the
 `theme` option in `config/config.yml` to the name of your theme folder.
@@ -239,7 +239,7 @@ are Pico's `content` variable (e.g. `{{ content }}`), Pico's `content` filter
 marked as HTML safe.
 
 #### Dealing with pages
-
+<hr>
 There are several ways to access Pico's pages list. You can access the current
 page's data using the `current_page` variable, or use the `prev_page` and/or
 `next_page` variables to access the respective previous/next page in Pico's
@@ -303,7 +303,7 @@ warned: It slows down Pico. Always use Pico's `pages()` function when iterating
 Pico's page list (e.g. `{% for page in pages() %}…{% endfor %}`).
 
 #### Twig filters and functions
-
+<hr>
 Additional to [Twig][]'s extensive list of filters, functions and tags, Pico
 also provides some useful additional filters and functions to make theming
 even easier.
@@ -344,9 +344,10 @@ even easier.
   parameters][FeaturesHttpParams] for details.
 
 ### Plugins
+<hr>
 
 #### Plugins for users
-
+<hr>
 Officially tested plugins can be found at http://picocms.org/plugins/, but
 there are many awesome third-party plugins out there! A good start point for
 discovery is [our Wiki][WikiPlugins].
@@ -370,7 +371,7 @@ disabled through your `config/config.yml`. If you want to e.g. disable the
 `false` by `true`.
 
 ## Config
-
+<hr>
 Configuring Pico really is stupidly simple: Just create a `config/config.yml`
 to override the default Pico settings (and add your own custom settings). Take
 a look at the `config/config.yml` for a brief overview of the
@@ -390,7 +391,7 @@ overwritten by a succeeding file. For example, if you set `site_title: Pico` in
 title will be "Pico".
 
 ## Documentation
-
+<hr>
 For more help have a look at the Pico documentation at http://picocms.org/docs.
 
 [Pico]: http://picocms.org/

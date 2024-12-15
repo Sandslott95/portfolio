@@ -6,7 +6,7 @@
     <div class="main technologies">
         <div class="grid-container">
             <h1 class="grid-title">Teknologier</h1> <!-- Titeln i grid -->
-
+            
             {% for tech in meta.Techs %}
                 <a href="{{ base_url }}/technology/{{ tech.class }}" class="grid-item {{ tech.class }}">
                     {{ tech.name }}
